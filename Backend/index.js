@@ -9,7 +9,7 @@ const Seat = require('./models/Seat');
 dotenv.config();
 const app = express();
 app.use(cors({
-     origin: ["https://vercel.com/sagars-projects-d4dbfa74"],
+     origin: ["https://deploy-mern-1whq.vercel.app"],
     methods: ["POST","GET"],
     credenials:true
      }
