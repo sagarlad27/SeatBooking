@@ -8,12 +8,7 @@ const Seat = require('./models/Seat');
 
 dotenv.config();
 const app = express();
-app.use(cors({
-     origin: ["https://deploy-mern-1whq.vercel.app"],
-    methods: ["POST","GET"],
-    credenials:true
-     }
-  ));
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI, {
