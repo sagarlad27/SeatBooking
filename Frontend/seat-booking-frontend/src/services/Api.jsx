@@ -1,3 +1,3 @@
 import axios from 'axios';
-const API = axios.create({ baseURL: 'https://seatbooking-backend-6x0s.onrender.com' });
+const API = axios.create({ baseURL: 'http://localhost:8000/api' });
 export default API;
