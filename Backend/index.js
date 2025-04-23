@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: ['http://localhost:3000','https://seatbooking-frontend-6ni3.onrender.com',]
+  origin: ['http://localhost:5000','https://seatbooking-frontend-6ni3.onrender.com',]
   credentials: true,
 };
 
