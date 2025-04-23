@@ -8,7 +8,11 @@ const Seat = require('./models/Seat');
 
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+    url : "https://seatbooking-frontend-6ni3.onrender.com",
+  }
+));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI, {
